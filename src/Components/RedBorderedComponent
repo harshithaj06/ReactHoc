@@ -1,0 +1,18 @@
+import React, { Component } from 'react';
+
+import BasicComponent from './BasicComponent';
+import NamesComponent from './NamesComponent';
+import withRedWrapper from '../withRedWrapper/withRedWrapper';
+
+class RedBorderedComponent extends Component {
+  render() {
+    return (
+    <div>
+    <BasicComponent />
+    <NamesComponent />
+    </div>
+    )
+  }
+}
+
+export default withRedWrapper(RedBorderedComponent);
